@@ -1,0 +1,18 @@
+{
+    "event": "customer.registered",
+    "version": 1,
+    "sent_at": "2026-10-03T18:12:16Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "customer": {
+        "id": 4,
+        "name": "Mark de Vries",
+        "email": "mark@example.com",
+        "group": "Customer",
+        "newsletter": true,
+        "source": "frontend",
+        "admin_url": "http://localhost:8082/admin-dev/index.php/sell/customers/4/view"
+    }
+}

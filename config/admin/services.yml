@@ -1,0 +1,6 @@
+services:
+  JustPush\PrestaShop\EventSubscriber\AdminLoginSubscriber:
+    class: JustPush\PrestaShop\EventSubscriber\AdminLoginSubscriber
+    public: false
+    tags:
+      - { name: kernel.event_subscriber }

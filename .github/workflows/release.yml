@@ -1,0 +1,34 @@
+name: Release
+
+# Push a tag such as v1.0.0 to build justpush.zip and attach it to a GitHub release.
+# Shop owners upload that zip in Modules > Module Manager > Upload a module.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.1"
+          tools: composer:v2
+          coverage: none
+      - name: Check the version matches the tag
+        run: grep -q "\$this->version = '${GITHUB_REF_NAME#v}'" justpush.php
+      - run: composer dump-autoload --optimize --no-dev --classmap-authoritative
+      - name: Build justpush.zip
+        run: |
+          mkdir -p build/justpush
+          rsync -a --exclude-from=.zipignore ./ build/justpush/
+          (cd build && zip -qr ../justpush.zip justpush)
+          unzip -l justpush.zip
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: justpush.zip
+          generate_release_notes: true

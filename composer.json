@@ -1,0 +1,27 @@
+{
+    "name": "justpush/prestashop-module-notify",
+    "description": "Push notifications from PrestaShop through JustPush Studio: orders, payments, refunds, customers, messages, low stock and admin logins.",
+    "type": "prestashop-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JustPush",
+            "homepage": "https://justpush.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JustPush\\PrestaShop\\": "src/"
+        },
+        "classmap": [
+            "justpush.php"
+        ]
+    },
+    "config": {
+        "prepend-autoloader": false,
+        "optimize-autoloader": true
+    }
+}

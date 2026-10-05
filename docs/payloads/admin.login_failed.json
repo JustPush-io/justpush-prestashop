@@ -1,0 +1,15 @@
+{
+    "event": "admin.login_failed",
+    "version": 1,
+    "sent_at": "2026-10-03T18:07:16Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "admin": {
+        "email": "demo@justpush.io",
+        "ip": "172.19.0.1",
+        "attempts": 1,
+        "admin_url": "http://localhost:8082/admin-dev/index.php/configure/advanced/employees/"
+    }
+}

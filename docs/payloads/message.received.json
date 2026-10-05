@@ -1,0 +1,21 @@
+{
+    "event": "message.received",
+    "version": 1,
+    "sent_at": "2026-10-03T18:12:04Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "customer_message": {
+        "id": 2,
+        "thread_id": 2,
+        "customer_name": null,
+        "email": "sophie@example.com",
+        "contact": "Customer service",
+        "order_reference": null,
+        "product": null,
+        "excerpt": "Hi! Do you ship the framed posters to Belgium, and how long does delivery usually take? I'd like to order three for an office opening next month.",
+        "has_attachment": false,
+        "admin_url": "http://localhost:8082/admin-dev/index.php?controller=AdminCustomerThreads&id_customer_thread=2&viewcustomer_thread"
+    }
+}

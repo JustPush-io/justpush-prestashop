@@ -1,0 +1,4 @@
+/vendor/
+/build/
+/config.xml
+/config_*.xml

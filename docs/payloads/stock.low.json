@@ -1,0 +1,18 @@
+{
+    "event": "stock.low",
+    "version": 1,
+    "sent_at": "2026-10-03T18:12:31Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "product": {
+        "id": 1,
+        "combination_id": 1,
+        "name": "Hummingbird printed t-shirt : Color - White, Size - S",
+        "reference": "demo_1",
+        "quantity": 4,
+        "threshold": 5,
+        "admin_url": "http://localhost:8082/admin-dev/index.php/sell/catalog/products/1/edit"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "event": "order.placed",
+    "version": 1,
+    "sent_at": "2026-10-03T18:10:02Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "order": {
+        "id": 6,
+        "reference": "FGIRRLHSH",
+        "total_paid": "54.74",
+        "currency": "EUR",
+        "customer_name": "Jane Doe",
+        "customer_email": "jane@example.com",
+        "is_guest": true,
+        "item_count": 2,
+        "payment_method": "Bank transfer",
+        "carrier": "My carrier",
+        "status": "Awaiting bank wire payment",
+        "source": "frontend",
+        "admin_url": "http://localhost:8082/admin-dev/index.php/sell/orders/6/view"
+    }
+}

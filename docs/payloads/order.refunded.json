@@ -1,0 +1,19 @@
+{
+    "event": "order.refunded",
+    "version": 1,
+    "sent_at": "2026-10-03T18:11:15Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "refund": {
+        "id": 1,
+        "order_id": 6,
+        "order_reference": "FGIRRLHSH",
+        "amount": "23.14",
+        "order_total": "54.74",
+        "currency": "EUR",
+        "customer_name": "Jane Doe",
+        "admin_url": "http://localhost:8082/admin-dev/index.php/sell/orders/6/view"
+    }
+}

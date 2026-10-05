@@ -1,0 +1,10 @@
+{
+    "event": "test.ping",
+    "version": 1,
+    "sent_at": "2026-10-03T18:08:13Z",
+    "shop": {
+        "name": "PrestaShop",
+        "url": "http://localhost:8082/"
+    },
+    "message": "Test from PrestaShop"
+}
