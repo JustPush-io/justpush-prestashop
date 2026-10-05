@@ -18,6 +18,7 @@
         "payment_method": "Bank transfer",
         "carrier": "My carrier",
         "status": "Payment accepted",
+        "paid": true,
         "source": "admin",
         "admin_url": "http://localhost:8082/admin-dev/index.php/sell/orders/6/view"
     }
